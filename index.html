@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Managment Time Table</title>
+	<link rel="stylesheet"
+    href="style.css"
+</head>
+<body>
+	<div id="overlay"></div>
+	<h2> Tsholanang's Time Table For The Week</h2><br>
+
+	<!-- <header>
+
+			<h1>Grid : Flex</h1>
+			<p><strong>A bare-bones 12-column grid</strong></p>
+
+	</header> -->
+	<div id='main'>
+		<article>
+
+			<!-- / College Timetable -->
+			<div class='tab'>
+				<table border='0' cellpadding='0' cellspacing='0'>
+					<tr class='days'>
+						<th></th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+					</tr>
+					<tr>
+						<td class='time'>9.00</td>
+						<td id='c1'class='cs335 blue' data-tooltip='Microsoft Azure &amp; Microsoft Fundamentals'>CS335 [JH1]</td>
+						<td id='c2'class='cs426 purple' data-tooltip='Coding programs. C# & Python language'>CS426 [CS1]</td>
+						<td id='c3'></td>
+						<td id='c4'></td>
+						<td id='c5'>-</td>
+					</tr>
+					<tr>
+						<td class='time'>9:15 - 10.00</td>
+						<td id='c6'></td>
+						<td id='c7' class='cs335 blue lab' data-tooltip='Coding Theory &amp; Coding Practicals'>CS335 [Lab]</td>
+						<td id='c8' class='md352 green' data-tooltip='Python Theory &amp; C# Theory'>MD352 [Kairos]</td>
+						<td id='c9'></td>
+						<td id='c10'>-</td>
+					</tr>
+					<tr>
+						<td class='time'>11.00</td>
+						<td id='c11'></td>
+						<td id='c12' class='cs335 blue lab' data-tooltip='Doing Project &amp; Self Evaluation'>CS335 [Lab]</td>
+						<td id='c13' class='md352 green' data-tooltip='Microsoft Azure Theory &amp; Microsoft Fundamentals'>MD352 [Kairos]</td>
+						<td id='c14' class='cs240 orange' data-tooltip='Operating Systems'>CS240 [CH]</td>
+						<td id='c15'>-</td>
+					</tr>
+					<tr>
+						<td class='time'>12.00</td>
+						<td id='c16'></td>
+						<td id='c17' class='md303 navy' data-tooltip='Research About The Project &amp; Project Implementation'>MD303 [CS2]</td>
+						<td id='c18' class='md313 red' data-tooltip='Special Topic: on Microsoft Azure &amp; Microsoft Fundamentals'>MD313 [Iontas]</td>
+						<td id='c19' ></td>
+						<td id='c20' >-</td>
+					</tr>
+					<tr>
+						<td class='time'>13.00</td>
+						<td id='c21'></td>
+						<td id='c22'></td>
+						<td id='c23'></td>
+						<td id='c24'></td>
+						<td id='c25'>-</td>
+					</tr>
+					<tr>
+						<td class='time'>14.00</td>
+						<td id='c26'></td>
+						<td id='c27'></td>
+						<td id='c28' class='cs426 purple' data-tooltip='Coding programs with C# & Python'>CS426 [CS2]</td>
+						<td id='c29' class='cs240 orange' data-tooltip='Week productivity check'>CS240 [TH1]</td>
+						<td id='c30'>-</td>
+					</tr>
+					<!-- <tr>
+						<td class='time'>15.00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class='cs240 orange lab' data-tooltip='Operating Systems'>CS240 [Lab]</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td class='time'>16.00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class='cs240 orange lab' data-tooltip='Operating Systems'>CS240 [Lab]</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td class='time'>17.00</td>
+						<td class='cs335 blue' data-tooltip='Software Engineering &amp; Software Process'>CS335 [TH1]</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>-</td>
+					</tr> -->
+				</table>
+			</div>
+
+		</article>
+		<nav>
+			<ul id="sortable">
+					<li class="list-header">
+						<h4>Things To Learn In a Week</h4>
+					</li>
+					<li class="list-item" >
+		      	<input id='label-1' type='checkbox' checked/>
+			      <label position="c1 c2" d-rec="CC003"for='label-1'>
+			        <h2>C# & Python </h2>
+								<span>Turma CS335</span></h2>
+			      </label>
+		    	</li>
+					<li class="list-item" >
+		      	<input id='label-2' type='checkbox' checked/>
+			      <label position="c2" d-rec="CC123" for='label-2'>
+			        <h2 data-tooltip='Engenharia de Software' >Microsoft Azure </h2>
+								<span>Learn Fundamentals & Theory</span></h2>
+			      </label>
+		    	</li>
+					<li class="list-item" >
+		      	<input id='label-3' type='checkbox' checked/>
+			      <label position="c1 c3 c26 c29" d-rec="MAT254" for='label-3'>
+			        <h4>Project & Research</h4>
+							<span><b>Turma:</b> Noite</span></h2>
+			      </label>
+		    	</li>
+					<li class="list-item" >
+		      	<input id='label-5' type='checkbox' checked/>
+			      <label position="c26" d-rec="MAT254" for='label-5'>
+			        <h4>C# & Python programs</h4>
+							<span><b>Turma:</b> Noite</span></h2>
+			      </label>
+		    	</li>
+<!--
+				  <li>
+			      <input id='label-3' type='checkbox'/>
+			      <label for='label-3'>
+			        <h2>Watch Movie <span>Lorem ipsum dolor</span></h2>
+			      </label>
+			    </li>
+
+				  <li>
+			    <input id='label-4' type='checkbox'/>
+			     <label for='label-4'>
+			        <h2>Date with babe <span>Lorem ipsum dolor</span></h2>
+			      </label>
+			    </li>
+
+			  <li>
+		     <input id='label-5' type='checkbox'/>
+		     <label for='label-5'>
+		        <h2>Jogging at Ayala<span>Lorem ipsum dolor</span></h2>
+		      </label>
+		    </li> -->
+
+  	</ul>
+		</nav>
+		<!-- <aside>aside</aside> -->
+	</div>
+	<footer>footer</footer>
+
+	<script src='main.js'></script>
+</body>
+</html>
